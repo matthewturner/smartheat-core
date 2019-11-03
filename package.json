@@ -1,0 +1,49 @@
+{
+  "name": "smartheat-core",
+  "version": "1.0.0",
+  "description": "Core library for controlling legacy thermostats",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "nyc --reporter=html ./node_modules/.bin/mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewturner/smartheat-core.git"
+  },
+  "author": "Matt Turner (matt@fiverings.uk)",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/matthewturner/smartheat-core/issues"
+  },
+  "homepage": "https://github.com/matthewturner/smartheat-core#readme",
+  "devDependencies": {
+    "ajv": "^6.10.2",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^5.16.0",
+    "mocha": "^6.2.2",
+    "nyc": "^14.1.1",
+    "promise-fs": "^2.1.1",
+    "sinon": "^7.5.0",
+    "validate-npm-package-license": "^3.0.4"
+  },
+  "dependencies": {
+    "@hapi/boom": "^7.4.9",
+    "@hapi/cryptiles": "^4.1.3",
+    "@hapi/hoek": "^8.2.4",
+    "JSON": "^1.0.0",
+    "axios": "^0.19.0",
+    "cheerio": "^0.22.0",
+    "durationjs": "github:matthewturner/durationjs#v1.2.0",
+    "extend": ">=3.0.2",
+    "fs": "^0.0.2",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "smartheat-clients": "github:matthewturner/smartheat-clients#v1.0.0"
+  }
+}
