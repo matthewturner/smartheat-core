@@ -3,10 +3,10 @@ chai.use(require('chai-as-promised'));
 const expect = chai.expect;
 const sinon = require('sinon');
 const Duration = require('durationjs');
-const DefaultsService = require('../../src/core/DefaultsService');
+const DefaultsService = require('../../core/DefaultsService');
 const Mock = require('smartheat-clients/clients/Mock');
-const HoldStrategy = require('../../src/core/HoldStrategy');
-const Logger = require('../../src/core/Logger');
+const HoldStrategy = require('../../core/HoldStrategy');
+const Logger = require('../../core/Logger');
 
 const createTarget = () => {
     const logger = new Logger();

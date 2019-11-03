@@ -2,9 +2,9 @@ const chai = require('chai');
 chai.use(require('chai-as-promised'));
 const expect = chai.expect;
 const sinon = require('sinon');
-const WaterService = require('../../src/core/WaterService');
+const WaterService = require('../../core/WaterService');
 const Mock = require('smartheat-clients/clients/Mock');
-const Logger = require('../../src/core/Logger');
+const Logger = require('../../core/Logger');
 
 const createTarget = () => {
     const logger = new Logger();

@@ -1,5 +1,5 @@
 const sinon = require('sinon');
-const Logger = require('../../src/core/Logger');
+const Logger = require('../../core/Logger');
 
 const createTarget = (level) => {
     const destination = sinon.stub();

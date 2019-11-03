@@ -3,11 +3,11 @@ chai.use(require('chai-as-promised'));
 const expect = chai.expect;
 const sinon = require('sinon');
 const Duration = require('durationjs');
-const ThermostatService = require('../../src/core/ThermostatService');
+const ThermostatService = require('../../core/ThermostatService');
 const Mock = require('smartheat-clients/clients/Mock');
-const HoldStrategy = require('../../src/core/HoldStrategy');
-const SetTemperatureStrategy = require('../../src/core/SetTemperatureStrategy');
-const Logger = require('../../src/core/Logger');
+const HoldStrategy = require('../../core/HoldStrategy');
+const SetTemperatureStrategy = require('../../core/SetTemperatureStrategy');
+const Logger = require('../../core/Logger');
 
 const createTarget = () => {
     const logger = new Logger();
