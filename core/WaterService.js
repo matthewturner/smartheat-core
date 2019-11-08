@@ -42,7 +42,7 @@ class WaterService extends Service {
             const device = await client.device();
             this.verifyContactable(device);
 
-            client.turnWaterOnFor('PT0M');
+            client.turnWaterOnFor(0);
 
             return this.createResponse(['The water is now off.'], client);
         } finally {
