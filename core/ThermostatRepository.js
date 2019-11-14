@@ -16,7 +16,11 @@ class ThermostatRepository {
             type: process.env.THERMOSTAT_TYPE,
             options: {
                 username: process.env.USERNAME,
-                password: process.env.PASSWORD
+                password: process.env.PASSWORD,
+                host: process.env.HOST,
+                port: process.env.PORT,
+                model: process.env.MODEL,
+                pin: process.env.PIN
             },
             defaultOnTemp: parseFloat(process.env.DEFAULT_ON_TEMP || '20'),
             defaultOffTemp: parseFloat(process.env.DEFAULT_OFF_TEMP || '14'),
