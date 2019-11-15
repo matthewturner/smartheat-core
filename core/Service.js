@@ -26,8 +26,10 @@ class Service {
 
         thermostat = await this._thermostatRepository.find('template');
         if (thermostat) {
+            this._logger.info('Creating thermostat from template...');
             thermostat.userId = this._context.userId;
         } else {
+            this._logger.info('Creating empty thermostat...');
             thermostat = {
                 userId: this._context.userId,
                 executionId: null
