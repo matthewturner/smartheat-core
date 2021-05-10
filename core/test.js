@@ -3,7 +3,7 @@ const DefaultsService = require('../core/DefaultsService');
 const HoldStrategy = require('../core/HoldStrategy');
 const Logger = require('../core/Logger');
 const ThermostatRepository = require('../core/ThermostatRepository');
-const Factory = require('smartheat-clients/clients/Factory');
+const Factory = require('../core/Factory');
 const SetTemperatureStrategy = require('../core/SetTemperatureStrategy');
 
 const logger = new Logger(Logger.DEBUG);
