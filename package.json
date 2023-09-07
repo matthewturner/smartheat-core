@@ -16,6 +16,9 @@
     "url": "https://github.com/matthewturner/smartheat-core/issues"
   },
   "homepage": "https://github.com/matthewturner/smartheat-core#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "ajv": ">=6.12.4",
     "chai": "^4.2.0",
@@ -25,7 +28,7 @@
     "nyc": "^14.1.1",
     "promise-fs": "^2.1.1",
     "sinon": "^7.5.0",
-    "smartheat-clients": "github:matthewturner/smartheat-clients#v1.4.0",
+    "@matthewturner/smartheat-clients": "^1.4.0",
     "validate-npm-package-license": "^3.0.4"
   },
   "dependencies": {
@@ -35,7 +38,7 @@
     "JSON": "^1.0.0",
     "axios": "^0.21.2",
     "cheerio": "^1.0.0-rc.12",
-    "durationjs": "github:matthewturner/durationjs#v1.2.2",
+    "@matthewturner/durationjs": "^1.2.3",
     "extend": ">=3.0.2",
     "fs": "^0.0.2",
     "lodash": "^4.17.21",
