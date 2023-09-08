@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const Duration = require('durationjs');
+const Duration = require('@matthewturner/durationjs');
 
 class Service {
     constructor(logger, context, thermostatFactory, thermostatRepository) {

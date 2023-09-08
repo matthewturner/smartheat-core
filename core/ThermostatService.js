@@ -1,5 +1,5 @@
 const moment = require('moment');
-const Duration = require('durationjs');
+const Duration = require('@matthewturner/durationjs');
 
 const Service = require('./Service');
 

@@ -2,10 +2,8 @@ const chai = require('chai');
 chai.use(require('chai-as-promised'));
 const expect = chai.expect;
 const sinon = require('sinon');
-const Duration = require('durationjs');
 const DefaultsService = require('../../core/DefaultsService');
-const Mock = require('smartheat-clients/clients/Mock');
-const HoldStrategy = require('../../core/HoldStrategy');
+const Mock = require('@matthewturner/smartheat-clients/clients/Mock');
 const Logger = require('../../core/Logger');
 
 const createTarget = () => {
