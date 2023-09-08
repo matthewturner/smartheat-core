@@ -4,10 +4,10 @@ const expect = chai.expect;
 const Factory = require('../../core/Factory');
 const Logger = require('../../core/Logger');
 
-const Mock = require('smartheat-clients/clients/Mock');
-const Salus = require('smartheat-clients/clients/Salus');
-const SalusApi = require('smartheat-clients/clients/SalusApi');
-const Heatmiser = require('smartheat-clients/clients/Heatmiser');
+const Mock = require('@matthewturner/smartheat-clients/clients/Mock');
+const Salus = require('@matthewturner/smartheat-clients/clients/Salus');
+const SalusApi = require('@matthewturner/smartheat-clients/clients/SalusApi');
+const Heatmiser = require('@matthewturner/smartheat-clients/clients/Heatmiser');
 
 const createTarget = () => {
     const logger = new Logger();
@@ -51,14 +51,14 @@ describe('Factory', () => {
 
     it('creates the dynamically specified client', () => {
         const target = createTarget();
-        const client = target.object().create('smartheat-clients/clients/Mock');
+        const client = target.object().create('@matthewturner/smartheat-clients/clients/Mock');
         expect(client).to.not.be.null;
         expect(client).to.be.instanceOf(Mock);
-    });    
-    
+    });
+
     it('raises error when specified client is not included in package.json', () => {
         const target = createTarget();
-        
+
         expect(() => target.object().create('smartheat-clients/clients/Mockx')).to
             .throw(Error, 'Unknown thermostat type smartheat-clients/clients/Mockx');
     });

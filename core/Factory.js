@@ -6,19 +6,19 @@ class Factory {
     create(type, options) {
         switch (type) {
             case 'mock': {
-                const Mock = require('smartheat-clients/clients/Mock');
+                const Mock = require('@matthewturner/smartheat-clients/clients/Mock');
                 return new Mock(this._logger, options);
             }
             case 'salus': {
-                const Salus = require('smartheat-clients/clients/Salus');
+                const Salus = require('@matthewturner/smartheat-clients/clients/Salus');
                 return new Salus(this._logger, options);
             }
             case 'salus-api': {
-                const SalusApi = require('smartheat-clients/clients/SalusApi');
+                const SalusApi = require('@matthewturner/smartheat-clients/clients/SalusApi');
                 return new SalusApi(this._logger, options);
             }
             case 'heatmiser': {
-                const Heatmiser = require('smartheat-clients/clients/Heatmiser');
+                const Heatmiser = require('@matthewturner/smartheat-clients/clients/Heatmiser');
                 return new Heatmiser(this._logger, options);
             }
             default: {

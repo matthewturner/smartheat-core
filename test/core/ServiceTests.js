@@ -3,7 +3,7 @@ chai.use(require('chai-as-promised'));
 const expect = chai.expect;
 const sinon = require('sinon');
 const Service = require('../../core/Service');
-const Mock = require('smartheat-clients/clients/Mock');
+const Mock = require('@matthewturner/smartheat-clients/clients/Mock');
 const Logger = require('../../core/Logger');
 
 const createTarget = () => {
