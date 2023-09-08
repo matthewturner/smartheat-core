@@ -1,5 +1,5 @@
 {
-  "name": "smartheat-core",
+  "name": "@matthewturner/smartheat-core",
   "version": "1.0.0",
   "description": "Core library for controlling legacy thermostats",
   "main": "index.js",
