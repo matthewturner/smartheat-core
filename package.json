@@ -32,7 +32,6 @@
     "validate-npm-package-license": "^3.0.4"
   },
   "dependencies": {
-    "JSON": "^1.0.0",
     "@matthewturner/durationjs": "^1.2.3",
     "extend": ">=3.0.2",
     "fs": "^0.0.2",
